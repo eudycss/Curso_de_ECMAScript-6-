@@ -15,7 +15,7 @@ newFuntion2('Sebas',26,'Ot')
 // 
 let hello='Hello'
 let world='World'
-let test='test'
+
 let epiPhrase=hello+''+world
 console.log(epiPhrase)
 
@@ -107,3 +107,19 @@ helloPromise()
 .then(response=> console.log(response))
 .then(()=>console.log('hola'))
 .catch(error=> console.log(error))
+
+//Clases, Módulos y Generadores
+class calculator{
+    constructor(){
+        this.valueA=0
+        this.valueB=0
+    }
+
+    sum(valueA,valueB){
+        this.valueA=valueA
+        this.valueB=valueB
+        return this.valueA +this.valueB
+    }
+}
+const calc = new calculator()
+console.log(calc.sum(3,8))
