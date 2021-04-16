@@ -15,6 +15,7 @@ newFuntion2('Sebas',26,'Ot')
 // 
 let hello='Hello'
 let world='World'
+let test='test'
 let epiPhrase=hello+''+world
 console.log(epiPhrase)
 
