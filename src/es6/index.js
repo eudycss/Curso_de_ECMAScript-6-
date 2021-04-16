@@ -61,3 +61,48 @@ console.table(globalVar)
 let a='b'
 a='f'
 console.table(a)
+// Arrow Functions, Promesas y Parámetros en objetos
+let name='edwin'
+let age=26
+//es5
+obj={name:name, age:age}
+//es6
+obj2={name,age}
+console.table(obj2)
+//arrow funtion
+
+const names=[
+    {name:'edwin',age:26},
+    {name:'Renato',age:25}
+]
+// si queria iterar es5
+/* let listOfNames=names.map(function(item){
+    console.log(item.name, item.age)
+}) */
+//es6
+
+let listOfNames2=names.map(item=> console.log(item.name, item.age))
+const listOfNames3 =(name,age,country) =>{
+    ...
+}
+// otra forma
+const listOfNames4= name => {
+    ...
+}
+
+const square = num=>num*num
+// Promise algo va a pasar
+const helloPromise = ()=>{
+    return new Promise((resolve, reject)=>{
+        if(false){
+            resolve('Hey. promise resuelta')
+        } else{
+            reject('Algo salio mal')
+        }
+    })
+}
+
+helloPromise()
+.then(response=> console.log(response))
+.then(()=>console.log('hola'))
+.catch(error=> console.log(error))
