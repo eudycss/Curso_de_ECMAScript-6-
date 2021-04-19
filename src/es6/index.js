@@ -123,3 +123,8 @@ class calculator{
 }
 const calc = new calculator()
 console.log(calc.sum(3,8))
+
+import { hello} from './module'
+hello()
+
+// generator
