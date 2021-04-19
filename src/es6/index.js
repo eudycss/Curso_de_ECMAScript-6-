@@ -128,3 +128,16 @@ import { hello} from './module'
 hello()
 
 // generator
+function* helloWorld(){
+    if(true){
+        yield 'Hola!'
+    }
+    if(true){
+        yield 'Sebas'
+    }
+}
+
+const generatorHello= helloWorld()
+console.table(generatorHello.next().value)
+console.table(generatorHello.next().value)
+console.table(generatorHello.next().value)
